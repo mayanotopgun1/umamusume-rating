@@ -1,0 +1,112 @@
+/* 页面背景 */
+.loginPage {
+  background: url('../images/back2.jpg') no-repeat center center fixed; /* 背景图片 */
+  background-size: cover; /* 背景图片自适应 */
+  min-height: 100vh; /* 确保高度覆盖整个视口 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* 页面内边距 */
+}
+
+/* 容器样式 */
+.container {
+  max-width: 400px; /* 限制容器宽度 */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+  backdrop-filter: blur(10px); /* 背景模糊效果 */
+  padding: 40px; /* 内边距 */
+  border-radius: 16px; /* 圆角边框 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  text-align: center; /* 居中对齐 */
+}
+
+/* 标题样式 */
+.title {
+  font-size: 2.5rem; /* 标题更大 */
+  font-family: 'Lobster', cursive; /* 使用优雅字体 */
+  color: #667eea; /* 标题颜色 */
+  margin-bottom: 20px; /* 标题与内容间距 */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* 添加文字阴影 */
+}
+
+/* 错误提示 */
+.error {
+  color: #e63946; /* 错误提示颜色 */
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* 表单样式 */
+.form {
+  display: flex;
+  flex-direction: column; /* 表单元素按列排列 */
+  gap: 20px; /* 表单元素之间的间距 */
+}
+
+/* 输入组 */
+.inputGroup {
+  text-align: left; /* 左对齐标签和输入框 */
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555; /* 标签颜色 */
+  margin-bottom: 8px;
+  display: block; /* 保证标签占据一行 */
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px; /* 圆角输入框 */
+  transition: border-color 0.3s, box-shadow 0.3s; /* 焦点时的动画过渡效果 */
+}
+
+.input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.5); /* 焦点时的边框阴影 */
+}
+
+/* 登录按钮 */
+.submitButton {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #667eea, #764ba2); /* 按钮背景渐变 */
+  border: none;
+  border-radius: 8px; /* 圆角按钮 */
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s; /* 悬停和点击的动画效果 */
+}
+
+.submitButton:hover {
+  transform: scale(1.05); /* 悬停时放大 */
+  background: linear-gradient(90deg, #764ba2, #667eea); /* 悬停时背景渐变反转 */
+}
+
+.submitButton:active {
+  transform: scale(0.95); /* 点击时缩小 */
+}
+
+/* 额外操作 */
+.extraActions {
+  margin-top: 20px;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: #667eea; /* 链接颜色 */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s; /* 悬停动画 */
+}
+
+.link:hover {
+  color: #764ba2; /* 悬停时链接颜色 */
+}

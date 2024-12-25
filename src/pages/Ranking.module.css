@@ -1,0 +1,90 @@
+/* 页面背景 */
+.rankingPage {
+  background: url('../images/back2.jpg') no-repeat center center fixed; /* 新的背景图片路径 */
+  background-size: cover; /* 背景图片适配视口 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 确保页面高度覆盖视口 */
+  padding: 20px;
+}
+
+/* 容器样式 */
+.container {
+  max-width: 900px; /* 增大容器宽度 */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+  backdrop-filter: blur(10px); /* 背景模糊效果 */
+  padding: 40px; /* 内边距 */
+  border-radius: 16px; /* 圆角边框 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  text-align: center;
+}
+
+/* 标题样式 */
+.title {
+  font-size: 3rem;
+  font-family: 'Lobster', cursive; /* 使用优雅的字体 */
+  color: #6a11cb; /* 标题颜色呼应背景 */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* 添加文字阴影 */
+}
+
+/* 表格样式 */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Rubik', sans-serif; /* 使用现代字体 */
+  color: #333;
+  background: rgba(255, 255, 255, 0.8); /* 半透明表格背景 */
+}
+
+.table th {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* 渐变背景 */
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 细线分隔 */
+  font-size: 1rem;
+  text-align: center;
+}
+
+.table tr:nth-child(even) {
+  background-color: rgba(106, 17, 203, 0.1); /* 与主题色呼应的背景 */
+}
+
+.table tr:hover {
+  background-color: rgba(106, 17, 203, 0.2); /* 悬停时的交互效果 */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* 按钮样式（可用于交互功能） */
+.actionButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6a11cb;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 20px;
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+.actionButton:hover {
+  transform: scale(1.05);
+  background: rgba(106, 17, 203, 0.1); /* 按钮悬停效果 */
+}
+
+.actionButton:active {
+  transform: scale(0.95); /* 点击效果 */
+}

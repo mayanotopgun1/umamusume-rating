@@ -1,0 +1,168 @@
+/* Home.module.css */
+
+/* 背景渐变 */
+.background {
+    background: url('../images/back2.jpg') no-repeat center center fixed; /* 背景图片 */
+    background-size: cover; /* 背景图片自适应 */
+    min-height: 100vh; /* 确保高度覆盖整个视口 */
+  }
+  
+  /* 主容器样式 */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 300px !important; /* 强制应用此样式 */
+  }
+  
+  /* 顶部横幅 */
+  .banner {
+    background: linear-gradient(to right, #ff69b4, #ff1493);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .banner:hover {
+    transform: scale(1.05);
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  /* 热门排行榜和推荐 */
+  .section {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sectionDark {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .starIcon {
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* 卡片样式 */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: linear-gradient(to right, #6a1b9a, #ab47bc);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cardRating {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .detailsButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff69b4;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.2s, background 0.2s;
+  }
+  
+  .detailsButton:hover {
+    transform: translateY(-2px);
+    background: #ffe6f0;
+  }
+  
+  /* 列表样式 */
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .listImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .listTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .listDescription {
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+  

@@ -1,0 +1,79 @@
+/* 全局样式 */
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #ff69b4, #8b00ff); /* 背景渐变色 */
+  font-family: 'Rubik', Arial, sans-serif; /* 使用现代化字体 */
+  color: #333;
+}
+
+/* 主容器样式 */
+.container {
+  padding-top: 700px; /* 导航栏高度 */
+  width: 80%;
+  max-width: 1200px;
+  margin: 50px auto; /* 居中仅在水平方向 */
+  background-color: rgba(255, 255, 255, 0.95); /* 半透明背景 */
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 高级阴影效果 */
+  border-radius: 16px;
+  text-align: center;
+  animation: fadeIn 1s ease; /* 动画效果 */
+}
+
+/* 按钮样式 */
+.button-link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  padding: 12px 24px;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(90deg, #ff69b4, #ff1493);
+  text-decoration: none; /* 去掉默认链接的下划线 */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  transition: transform 0.3s ease, background 0.3s ease; /* 添加动态效果 */
+  cursor: pointer; /* 鼠标变成手型 */
+}
+
+.button-link:hover {
+  background: linear-gradient(90deg, #ff1493, #8b00ff); /* 悬停时渐变变化 */
+  transform: scale(1.1); /* 悬停时放大 */
+}
+
+.button-link:active {
+  transform: scale(0.95); /* 点击时缩小 */
+}
+
+/* 水波纹效果 */
+.button-link::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.5); /* 水波纹颜色 */
+  border-radius: 50%; /* 圆形水波纹 */
+  transform: scale(0); /* 初始缩放为0 */
+  opacity: 1; /* 初始透明度 */
+  pointer-events: none;
+  transition: transform 0.6s ease, opacity 0.6s ease; /* 动画过渡 */
+}
+
+.button-link:active::after {
+  transform: scale(4); /* 点击时水波纹扩散 */
+  opacity: 0; /* 最终透明度 */
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
